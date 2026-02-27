@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="zpe.lib.sort">
+    <output-path>$PROJECT_DIR$/out/artifacts/zpe_lib_sort</output-path>
+    <root id="archive" name="zpe.lib.sort.jar">
+      <element id="module-output" name="zpe.lib.sort" />
+    </root>
+  </artifact>
+</component>
