@@ -286,8 +286,8 @@ public class Plugin implements ZPELibrary {
     }
 
     @Override
-    public byte getReturnType() {
-      return YASSByteCodes.MIXED_TYPE;
+    public byte[] getReturnTypes() {
+      return new byte[]{YASSByteCodes.LIST, YASSByteCodes.BOOLEAN_TYPE};
     }
   }
 
@@ -382,8 +382,8 @@ public class Plugin implements ZPELibrary {
     }
 
     @Override
-    public byte getReturnType() {
-      return YASSByteCodes.MIXED_TYPE;
+    public byte[] getReturnTypes() {
+      return new byte[]{YASSByteCodes.LIST, YASSByteCodes.BOOLEAN_TYPE};
     }
   }
 
@@ -441,8 +441,8 @@ public class Plugin implements ZPELibrary {
     }
 
     @Override
-    public byte getReturnType() {
-      return YASSByteCodes.MIXED_TYPE;
+    public byte[] getReturnTypes() {
+      return new byte[]{YASSByteCodes.LIST, YASSByteCodes.BOOLEAN_TYPE};
     }
   }
 
@@ -500,8 +500,8 @@ public class Plugin implements ZPELibrary {
     }
 
     @Override
-    public byte getReturnType() {
-      return YASSByteCodes.MIXED_TYPE;
+    public byte[] getReturnTypes() {
+      return new byte[]{YASSByteCodes.LIST, YASSByteCodes.BOOLEAN_TYPE};
     }
   }
 }
