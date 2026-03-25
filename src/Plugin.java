@@ -2,13 +2,13 @@ import jamiebalfour.zpe.core.YASSByteCodes;
 import jamiebalfour.zpe.core.ZPEFunction;
 import jamiebalfour.zpe.core.ZPERuntimeEnvironment;
 import jamiebalfour.zpe.core.ZPEStructure;
-import jamiebalfour.zpe.exceptions.ZPERuntimeException;
-import jamiebalfour.zpe.interfaces.ZPECustomFunction;
-import jamiebalfour.zpe.interfaces.ZPELibrary;
-import jamiebalfour.zpe.interfaces.ZPEType;
-import jamiebalfour.zpe.types.ZPEBoolean;
-import jamiebalfour.zpe.types.ZPEList;
-import jamiebalfour.zpe.types.ZPEMap;
+import jamiebalfour.zpe.core.exceptions.ZPERuntimeException;
+import jamiebalfour.zpe.core.interfaces.ZPECustomFunction;
+import jamiebalfour.zpe.core.interfaces.ZPELibrary;
+import jamiebalfour.zpe.core.interfaces.ZPEType;
+import jamiebalfour.zpe.core.types.ZPEBoolean;
+import jamiebalfour.zpe.core.types.ZPEList;
+import jamiebalfour.zpe.core.types.ZPEMap;
 
 import java.text.Collator;
 import java.util.*;
@@ -369,7 +369,7 @@ public class Plugin implements ZPELibrary {
       }
 
       try {
-        return m.get(jamiebalfour.zpe.types.ZPEString.newStr(key));
+        return m.get(jamiebalfour.zpe.core.types.ZPEString.newStr(key));
       } catch (Exception ignored) {
       }
 
