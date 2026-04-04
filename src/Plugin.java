@@ -1,7 +1,4 @@
-import jamiebalfour.zpe.core.YASSByteCodes;
-import jamiebalfour.zpe.core.ZPEFunction;
-import jamiebalfour.zpe.core.ZPERuntimeEnvironment;
-import jamiebalfour.zpe.core.ZPEStructure;
+import jamiebalfour.zpe.core.*;
 import jamiebalfour.zpe.core.exceptions.ZPERuntimeException;
 import jamiebalfour.zpe.core.interfaces.ZPECustomFunction;
 import jamiebalfour.zpe.core.interfaces.ZPELibrary;
@@ -199,6 +196,11 @@ public class Plugin implements ZPELibrary {
   @Override
   public Map<String, Class<? extends ZPEStructure>> getObjects() {
     return null;
+  }
+
+  @Override
+  public Map<String, ZPEModule> getModules() {
+    return new HashMap<>();
   }
 
   @Override
